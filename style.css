@@ -49,22 +49,26 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    text-align: center;
     
   }
   
   /*social*/
   .social {
+    margin-left:16%;
+    display: flex;
     justify-content: space-between;
     order: 2;
     padding-top: 1vh; /* Tăng khoảng cách giữa .social và phần trên */
     margin-top: 0; /* Loại bỏ margin-top */
 }
-  .social a {
-    padding: 0 20px
+  .social div a {
+    padding: 0 80px;
   }
   .social a img {
-    padding: 15px 20px; /* Điều chỉnh padding để tăng kích thước và làm đẹp các thẻ <a> */
-    margin: 0 15px; /* Tăng khoảng cách giữa các thẻ <a> */
+    display: flex;
+    padding: 20px 20px; /* Điều chỉnh padding để tăng kích thước và làm đẹp các thẻ <a> */
     transition: transform 0.3s, cursor 0.3s; /* Thêm hiệu ứng chuyển đổi và con trỏ */
     background-color: rgb(255, 255, 255);
     border-radius: 20%;
@@ -74,6 +78,19 @@ body {
     cursor: pointer; /* Đổi con trỏ thành pointer khi di chuột vào */
     transform: scale(1.1); /* Tăng kích thước của phần tử lên 1.1 khi di chuột vào */
     transition: transform 0.3s ease; /* Áp dụng hiệu ứng mượt mà */
+  }
+  .image-container img {
+    margin: 0 10px;
+    width: 30px;
+    height: 30px;
+  }
+  .image {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 45vw;
+    left: 10%;
+    transform: translateY(46.5%);
   }
   
   .name-container {
@@ -87,7 +104,7 @@ body {
 
 .name1 {
     text-align: center;
-    margin-bottom: -50px;
+    margin-bottom:-60px;
     font-weight: 500;
     font-family: Arial, Helvetica, sans-serif;
     font-size: calc(100vw / 1920 * 80);
@@ -103,7 +120,7 @@ body {
   .ca {
     font-weight: 700;
     font-size: calc(100vw / 1920 * 20);
-    margin-top: 10px;
+    padding-top: 20px;
     font-family: "Josefin Slab", serif;
     cursor: pointer;
   }
@@ -113,20 +130,6 @@ body {
     justify-content: center;
     margin-top: 0; /* Loại bỏ margin-top */
 }
-  
-  .image-container img {
-    margin: 0 10px;
-    width: 3vw;
-    height: 4vh;
-  }
-  .image {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 50vw;
-    left: 10%;
-    transform: translateY(46.5%);
-  }
   #overlay {
     display: none;
     position: fixed;
@@ -176,9 +179,525 @@ body {
     z-index: 9998;
     opacity: 0.1; /* Độ mờ */
   }
+  @media screen and (max-width: 1437px) {
+    .image {
+      position: absolute;
+      bottom: 0 ;
+      left: 50%;
+      width: 45vw;
+      left: 10%;
+      transform: translateY(60%);
+    }
+    .image-container img {
+      margin: 0 10px;
+      width: 25px;
+      height: 25px;
+    }
+    .social div a {
+      padding: 0 65px;
+    }
+    .social {
+      margin-left:5%;
+      display: flex;
+      justify-content: space-between;
+      order: 2;
+      padding-top: 1vh; /* Tăng khoảng cách giữa .social và phần trên */
+      margin-top: 0; /* Loại bỏ margin-top */
+  }
+  }
+  @media screen and (max-width: 1343px) {
+    .main {
+      height: 150vh;
+    }
+    .image {
+      position: absolute;
+      bottom: 0 ;
+      left: 50%;
+      width: 45vw;
+      left: 10%;
+      transform: translateY(60%);
+    }.image-container img {
+      margin: 0 10px;
+      width:20px;
+      height: 20px;
+    }
+    .social div a {
+      padding: 0 55px;
+    }
+    .social {
+      margin-left:5%;
+      display: flex;
+      justify-content: space-between;
+      order: 2;
+      padding-top: 1vh; /* Tăng khoảng cách giữa .social và phần trên */
+      margin-top: 0; /* Loại bỏ margin-top */
+  }
+  }
+  @media screen and (max-width: 1044px) {
+    .main {
+      height: 140vh;
+    }
+    .image {
+      position: absolute;
+      bottom: 0 ;
+      left: 50%;
+      width: 45vw;
+      left: 30%;
+      transform: translateY(65%);
+    }.image-container img {
+      margin: 0 10px;
+      width: 15px;
+      height: 15px;
+    }
+    .title {
+      margin-top: 5px;
+      margin-left: 0;
+      font-size: calc(120vw / 1920 * 90);
+      text-align: center; /* Căn giữa tiêu đề */
+      text-shadow: 
+      -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000; /* Tạo viền bằng shadow */
+    }
+    .title1 {
+      margin-top: 90px;
+      font-family:'Courier New', Courier, monospace ;
+      color: rgb(255, 255, 255);
+    }
+    
+    .title2 {
+      display:block;
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgb(255, 255, 255);;
+    }
+    .info-container {
+      float:none;
+      width: 50%; /* Đặt chiều rộng tùy ý */
+      margin-top: 20px;
+      margin: auto;
+      display: block;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      text-align: center;
+      
+    }
+    .social {
+      margin-left:5%;
+      display: flex;
+      justify-content: space-between;
+      order: 2;
+      padding-top: 1vh; /* Tăng khoảng cách giữa .social và phần trên */
+      margin-top: 0; /* Loại bỏ margin-top */
+  }
+  }
   
-  
-  
+  @media screen and (max-width: 900px) {
+    .main {
+      height: 130vh;
+    }
+    .image {
+      position: absolute;
+      bottom: 0 ;
+      left: 50%;
+      width: 45vw;
+      left: 30%;
+      transform: translateY(65%);
+    }.image-container img {
+      margin: 0 10px;
+      width: 15px;
+      height: 15px;
+    }
+    .title {
+      margin-top: 5px;
+      margin-left: 0;
+      font-size: calc(120vw / 1920 * 90);
+      text-align: center; /* Căn giữa tiêu đề */
+      text-shadow: 
+      -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000; /* Tạo viền bằng shadow */
+    }
+    .title1 {
+      margin-top: 90px;
+      font-family:'Courier New', Courier, monospace ;
+      color: rgb(255, 255, 255);
+    }
+    
+    .title2 {
+      display:block;
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgb(255, 255, 255);;
+    }
+    .info-container {
+      float:none;
+      width: 70%; /* Đặt chiều rộng tùy ý */
+      margin-top: 20px;
+      margin: 0 auto;
+      display: block;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      text-align: center;
+      
+    }
+    .social {
+      margin-left:8%;
+      display: flex;
+      justify-content: center;
+      order: 2;
+      padding-top: 1vh; /* Tăng khoảng cách giữa .social và phần trên */
+      margin-top: 0; /* Loại bỏ margin-top */
+  }
+  .social div a {
+    padding: 0 60px;
+  }
+  }
+  @media screen and (max-width: 800px) {
+    .main {
+      height: 120vh;
+    }
+    .image {
+      position: absolute;
+      bottom: 0 ;
+      left: 50%;
+      width: 45vw;
+      left: 30%;
+      transform: translateY(50%);
+    }.image-container img {
+      margin: 0 10px;
+      width:10px;
+      height: 10px;
+    }
+    .title {
+      margin-top: 5px;
+      margin-left: 0;
+      font-size: calc(120vw / 1920 * 90);
+      text-align: center; /* Căn giữa tiêu đề */
+      text-shadow: 
+      -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000; /* Tạo viền bằng shadow */
+    }
+    .title1 {
+      margin-top: 90px;
+      font-family:'Courier New', Courier, monospace ;
+      color: rgb(255, 255, 255);
+    }
+    
+    .title2 {
+      display:block;
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgb(255, 255, 255);;
+    }
+    .info-container {
+      float:none;
+      width: 100%; /* Đặt chiều rộng tùy ý */
+      margin-top: 20px;
+      margin: 0 auto;
+      display: block;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      text-align: center;
+      
+    }
+    .social {
+      margin-left:8%;
+      display: flex;
+      justify-content: center;
+      order: 2;
+      padding-top: 1vh; /* Tăng khoảng cách giữa .social và phần trên */
+      margin-top: 0; /* Loại bỏ margin-top */
+  }
+  .social div a {
+    padding: 0 60px;
+  }
+  }
+  @media screen and (max-width: 700px) {
+    .main {
+      height: 110vh;
+    }
+    .image {
+      position: absolute;
+      bottom: 0 ;
+      left: 50%;
+      width: 45vw;
+      left: 30%;
+      transform: translateY(40%);
+    }.image-container img {
+      margin: 0 10px;
+      width:10px;
+      height: 10px;
+    }
+    .title {
+      margin-top: 5px;
+      margin-left: 0;
+      font-size: calc(120vw / 1920 * 90);
+      text-align: center; /* Căn giữa tiêu đề */
+      text-shadow: 
+      -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000; /* Tạo viền bằng shadow */
+    }
+    .title1 {
+      margin-top: 90px;
+      font-family:'Courier New', Courier, monospace ;
+      color: rgb(255, 255, 255);
+    }
+    
+    .title2 {
+      display:block;
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgb(255, 255, 255);;
+    }
+    .info-container {
+      float:none;
+      width: 100%; /* Đặt chiều rộng tùy ý */
+      margin-top: 20px;
+      margin: 0 auto;
+      display: block;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      text-align: center;
+      
+    }
+    .name-container {
+      width: 100%;
+      display: block;
+      justify-content: center;
+      order: 1;;
+      align-items: center;
+      text-align: center;
+      color: rgb(255, 255, 255);
+    }
+    .name1 {
+      text-align: center;
+      margin-bottom:-60px;
+      font-weight: 500;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: calc(150vw / 1920 * 80);
+  }
+  .name2 {
+      font-size: calc(150vw / 1920 * 80);
+      text-align: center;
+      display: block;
+      font-weight: 500;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  .ca {
+    font-weight: 700;
+    font-size: calc(150vw / 1920 * 20);
+    padding-top: 20px;
+    font-family: "Josefin Slab", serif;
+    cursor: pointer;
+  }
+    .social {
+      margin-left:8%;
+      display: flex;
+      justify-content: center;
+      order: 2;
+      padding-top: 1vh; /* Tăng khoảng cách giữa .social và phần trên */
+      margin-top: 0; /* Loại bỏ margin-top */
+  }
+  .social div a {
+    padding: 0 60px;
+  }
+  }
+  @media screen and (max-width: 600px) {
+    .main {
+      height: 100vh;
+    }
+    .image {
+      position: absolute;
+      bottom: 0 ;
+      left: 50%;
+      width: 45vw;
+      left: 30%;
+      transform: translateY(30%);
+    }.image-container img {
+      margin: 0 10px;
+      width:10px;
+      height: 10px;
+    }
+    .title {
+      margin-top: 5px;
+      margin-left: 0;
+      font-size: calc(120vw / 1920 * 90);
+      text-align: center; /* Căn giữa tiêu đề */
+      text-shadow: 
+      -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000; /* Tạo viền bằng shadow */
+    }
+    .title1 {
+      margin-top: 90px;
+      font-family:'Courier New', Courier, monospace ;
+      color: rgb(255, 255, 255);
+    }
+    
+    .title2 {
+      display:block;
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgb(255, 255, 255);;
+    }
+    .info-container {
+      float:none;
+      width: 100%; /* Đặt chiều rộng tùy ý */
+      margin-top: 20px;
+      margin: 0 auto;
+      display: block;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      text-align: center;
+      
+    }
+    .name-container {
+      width: 100%;
+      display: block;
+      justify-content: center;
+      order: 1;;
+      align-items: center;
+      text-align: center;
+      color: rgb(255, 255, 255);
+    }
+    .name1 {
+      text-align: center;
+      margin-bottom:-50px;
+      font-weight: 500;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: calc(150vw / 1920 * 80);
+  }
+  .name2 {
+      font-size: calc(150vw / 1920 * 80);
+      text-align: center;
+      display: block;
+      font-weight: 500;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  .ca {
+    font-weight: 700;
+    font-size: calc(150vw / 1920 * 20);
+    padding-top: 20px;
+    font-family: "Josefin Slab", serif;
+    cursor: pointer;
+  }
+    .social {
+      margin-left:8%;
+      display: flex;
+      justify-content: center;
+      order: 2;
+      padding-top: 1vh; /* Tăng khoảng cách giữa .social và phần trên */
+      margin-top: 0; /* Loại bỏ margin-top */
+  }
+  .social div a {
+    padding: 0 60px;
+  }
+  }
+  @media screen and (max-width: 500px) {
+    .main {
+      height: 90vh;
+    }
+    .image {
+      position: absolute;
+      bottom: 1 ;
+      left: 50%;
+      width: 45vw;
+      left: 30%;
+      transform: translateY(5%);
+      
+    }.image-container img {
+      margin: 0 10px;
+      width:7px;
+      height: 7px;
+    }
+    .title {
+      margin-top: 5px;
+      margin-left: 15px;
+      font-size: calc(120vw / 1920 * 90);
+      text-align: center; /* Căn giữa tiêu đề */
+      text-shadow: 
+      -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000; /* Tạo viền bằng shadow */
+    }
+    .title1 {
+      margin-top: 90px;
+      font-family:'Courier New', Courier, monospace ;
+      color: rgb(255, 255, 255);
+    }
+    
+    .title2 {
+      display:block;
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgb(255, 255, 255);;
+    }
+    .info-container {
+      float:none;
+      width: 100%; /* Đặt chiều rộng tùy ý */
+      margin-top: 20px;
+      margin: 0 auto;
+      display: block;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      text-align: center;
+      
+    }
+    .name-container {
+      width: 100%;
+      display: block;
+      justify-content: center;
+      order: 1;;
+      align-items: center;
+      text-align: center;
+      color: rgb(255, 255, 255);
+    }
+    .name1 {
+      text-align: center;
+      margin-bottom:-30px;
+      font-weight: 500;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: calc(150vw / 1920 * 80);
+  }
+  .name2 {
+      font-size: calc(150vw / 1920 * 80);
+      text-align: center;
+      display: block;
+      font-weight: 500;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  .ca {
+    font-weight: 700;
+    font-size: calc(150vw / 1920 * 20);
+    padding-top: 20px;
+    font-family: "Josefin Slab", serif;
+    cursor: pointer;
+  }
+    .social {
+      margin-left:5%;
+      display: flex;
+      justify-content: center;
+      order: 2;
+      padding-top: 1vh; /* Tăng khoảng cách giữa .social và phần trên */
+      margin-top: 0; /* Loại bỏ margin-top */
+  }
+  .social div a {
+    padding: 0 40px;
+  }.image-container img {
+    margin: 0 10px;
+    width:7px;
+    height: 7px;
+  }
+  }
 
 
 
