@@ -590,7 +590,7 @@ body {
     cursor: pointer;
   }
     .social {
-      margin-left:8%;
+      margin-left:17%;
       display: flex;
       justify-content: center;
       order: 2;
@@ -599,6 +599,9 @@ body {
   }
   .social div a {
     padding: 0 60px;
+  }
+  .social a img {
+    padding: 10px 10px;
   }
   }
   @media screen and (max-width: 500px) {
@@ -696,6 +699,9 @@ body {
     margin: 0 10px;
     width:7px;
     height: 7px;
+  }
+  .social a img {
+    padding: 5px 5px;
   }
   }
 
