@@ -24,7 +24,7 @@ body {
   
   .title1,
   .title2 {
-    margin:30px;
+    margin:30px auto;
     display: block;
     padding: 0px 0;
   }
