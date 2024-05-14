@@ -560,6 +560,7 @@ body {
       
     }
     .name-container {
+      margin: auto;
       width: 100%;
       display: block;
       justify-content: center;
@@ -573,10 +574,10 @@ body {
       margin-bottom:-50px;
       font-weight: 500;
       font-family: Arial, Helvetica, sans-serif;
-      font-size: calc(150vw / 1920 * 80);
+      font-size: calc(120vw / 1920 * 80);
   }
   .name2 {
-      font-size: calc(150vw / 1920 * 80);
+      font-size: calc(120vw / 1920 * 80);
       text-align: center;
       display: block;
       font-weight: 500;
@@ -584,8 +585,8 @@ body {
   }
   .ca {
     font-weight: 700;
-    font-size: calc(150vw / 1920 * 20);
-    padding-top: 20px;
+    font-size: calc(100vw / 1920 * 20);
+    padding-top: 27px;
     font-family: "Josefin Slab", serif;
     cursor: pointer;
   }
@@ -601,111 +602,7 @@ body {
     padding: 0 60px;
   }
   .social a img {
-    padding: 10px 10px;
+    padding: 15px 15px;
   }
   }
-  @media screen and (max-width: 500px) {
-    .main {
-      height: 90vh;
-    }
-    .image {
-      position: absolute;
-      bottom: 1 ;
-      left: 50%;
-      width: 45vw;
-      left: 30%;
-      transform: translateY(5%);
-      
-    }.image-container img {
-      margin: 0 10px;
-      width:7px;
-      height: 7px;
-    }
-    .title {
-      margin-top: 5px;
-      margin-left: 15px;
-      font-size: calc(120vw / 1920 * 90);
-      text-align: center; /* Căn giữa tiêu đề */
-      text-shadow: 
-      -1px -1px 0 #000,  
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-      1px 1px 0 #000; /* Tạo viền bằng shadow */
-    }
-    .title1 {
-      margin-top: 90px;
-      font-family:'Courier New', Courier, monospace ;
-      color: rgb(255, 255, 255);
-    }
-    
-    .title2 {
-      display:block;
-      font-family: Arial, Helvetica, sans-serif;
-      color: rgb(255, 255, 255);;
-    }
-    .info-container {
-      float:none;
-      width: 100%; /* Đặt chiều rộng tùy ý */
-      margin-top: 20px;
-      margin: 0 auto;
-      display: block;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-      text-align: center;
-      
-    }
-    .name-container {
-      width: 100%;
-      display: block;
-      justify-content: center;
-      order: 1;;
-      align-items: center;
-      text-align: center;
-      color: rgb(255, 255, 255);
-    }
-    .name1 {
-      text-align: center;
-      margin-bottom:-30px;
-      font-weight: 500;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: calc(150vw / 1920 * 80);
-  }
-  .name2 {
-      font-size: calc(150vw / 1920 * 80);
-      text-align: center;
-      display: block;
-      font-weight: 500;
-      font-family: Arial, Helvetica, sans-serif;
-  }
-  .ca {
-    font-weight: 700;
-    font-size: calc(150vw / 1920 * 20);
-    padding-top: 20px;
-    font-family: "Josefin Slab", serif;
-    cursor: pointer;
-  }
-    .social {
-      margin-left:5%;
-      display: flex;
-      justify-content: center;
-      order: 2;
-      padding-top: 1vh; /* Tăng khoảng cách giữa .social và phần trên */
-      margin-top: 0; /* Loại bỏ margin-top */
-  }
-  .social div a {
-    padding: 0 40px;
-  }.image-container img {
-    margin: 0 10px;
-    width:7px;
-    height: 7px;
-  }
-  .social a img {
-    padding: 5px 5px;
-  }
-  }
-
-
-
   
-
